@@ -1,0 +1,64 @@
+#include<iostream.h>
+#include<conio.h>
+
+float sindex(int d_ef,int d);
+float sstiff(int W,int diff);
+float mor(int ,int ,int,int);
+float mtorque(int,int);
+float mxst(int,int);
+void display(float,float,float,float,float);
+
+void main()
+{       int load,n;
+	float diff,dout,din;
+	clrscr();
+	float def=(dout+din)/2;
+	float t=dout-din;
+	cout<<endl<<"Enter the Outer Diameter: ";
+	cin>>dout;
+	cout<<endl<<"Enter the inner diameter: ";
+	cin>>din;
+	cout<<endl<<"Enter the load :";
+	cin>>load;
+	cout<<endl<<"Enter the difflection :";
+	cin>>diff;
+	cout<<endl<<"Enter the number of turns on the coil:";
+	cin>>n;
+	float c= sindex(def,t);
+	float k= sstiff(load,diff);
+	float g= mor(k,c,n,t);
+	float torq= mtorque(load,t/2);
+	float f= mxst(torq,t);
+	display(c,k,g,torq,f);
+	getch();
+}
+  float sindex(float x,float y)
+       {   float a;
+		a=x/y;
+		return a;
+		}
+
+       float sstiff(int w, float diff)
+       {	float k=w/diff;
+		return k;
+       }
+       float mor(float k, float c,int n, float d)
+       {
+		float g;
+		g=(8*k*c*c*c*c*n)/d;
+		return g;
+       }
+       float mtorqe(int load,int r)
+	{
+		float t=load*r;
+		return t;
+	}
+	void display(float c,float k,float g,float torq)
+	{
+		cout<<endl<<"Spring Index ="<<c;
+		cout<<endl<<"Spring Stiffness ="<<k;
+		cout<<endl<<"Modulus Of Rigidity ="<<g;
+		cout<<endl<<"Maximum Torque ="<<torq;
+		cout<<endl<<"thank you!!";
+	}
+

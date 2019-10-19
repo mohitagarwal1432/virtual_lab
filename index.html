@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    <title>Virtual Labs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body
+        {
+            background-color: #012943;
+        }
+        .main-section
+        {
+            width:1050px;
+            background-color: #e4f2fd;
+            margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .inline
+        {
+            display: inline;
+        }
+        .links
+        {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .content-section
+        {
+            
+            background-color: white;
+            margin: auto;
+            /*width: calc(100% - 70px);*/
+            width: 1000px;
+            padding-right: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        ul li
+        {
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            margin-left: 10px;
+            
+        }
+        ul li:hover
+        {
+            background-color: #02568e;  
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .content-section-heading
+        {
+            margin-left: 20px;
+        }
+        .menuimg
+        {
+            height: 50px;
+            width: 50px;
+        }
+        .content-section-ordered-list
+        {
+            margin-left: 40px;
+        }
+        .content-section-paragraph
+        {
+            margin-left: 30px;
+        }
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table
+        {
+            width: 90%;
+            margin-top: 20px;
+        }
+        td
+        {
+            height: 30px;
+        }
+        pre
+        {
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <img src="skit.png" style="width:calc(100% - 60px);padding:20px 40px 0px 40px;height:80px"/>
+        <h1 style="background-color:#0e8de0;color:white;padding-left:20px;border:1px solid white;padding:12px;">Strength-of-Materials Lab</h1>
+        <div style="background-color: #012943;color:white;padding:10px;">
+            <!--<p class="links inline">Home </p>
+            <p class="inline"> > </p>-->
+            <p class="links inline">Strength-of-Materials Lab</p>
+            <p class="inline"> > </p>
+            <p class="links inline">Universal Spring Testing Machine</p>
+        </div>
+        <h1 style="color:#3d414c;padding-left:30px;">Universal Spring Testing Machine</h1>
+        <div class="content-section">
+            <ul style="padding:0px;">
+                <a href="index.html"><li><img class="menuimg" src="theory.jpg"><br><p>THEORY</p></li></a>
+                <a href="procedure.html"><li><img class="menuimg" src="procedure.jpg"><br><p>PROCEDURE</p></li></a>
+                <a href="selfevaluation.html"><li><img class="menuimg" src="selfevaluation.jpg"><br><p>SELF-EVALUATION</p></li></a>
+                <a href="simulation.html"><li><img class="menuimg" src="simulation.jpg"><br><p>SIMULATOR</p></li></a>
+                <a href="assignment.html"><li><img class="menuimg" src="assignment.jpg"><br><p>ASSIGNMENT</p></li></a>
+                <a href="quiz.html"><li><img class="menuimg" src="quiz.jpg"><br><p>QUIZ</p></li></a>
+                <a href="video.html"><li><img class="menuimg" src="video.jpg"><br><p>VIDEO</p></li></a>
+                <a href="reference.html"><li><img class="menuimg" src="reference.jpg"><br><p>REFERENCE</p></li></a>
+            </ul>
+            
+            <h3 class="content-section-heading">AIM</h3>
+            <p class="content-section-paragraph">To study the spring testing machine and determine the design parameters for tension and compression helical spring -</p>
+            <ol type="A" class="content-section-ordered-list">
+                <li>Max. torque (t)</li>
+                <li>Max. shear stress (fs)</li>
+                <li>Spring index (c)</li>
+                <li>Stiffness of spring (k)</li>
+                <li>Modulus of rigidity of spring material (G)</li>
+            </ol>
+            
+            <h3 class="content-section-heading">RESOURCES REQUIRED</h3>
+            <ol class="content-section-ordered-list">
+                <li>Spring testing machine.</li>
+                <li>Open coiled helical spring.</li>
+                <li>Closed coil helical spring.</li>
+                <li>Scale (mounted on spring testing machine).</li>
+                <li>Vernier calliper.</li>
+            </ol>
+            
+            <h3 class="content-section-heading">THRORY</h3>
+            
+            <ol class="content-section-ordered-list">
+                <li>
+                    Stiffness of spring(k): -- Spring stiffness is defined as load that comes unit deflection.
+                    <pre>
+    K=w/δ
+    Where k = spring stiffness (kg/mm)
+    w = applied load
+    δ = deflection
+                    </pre>
+                    The nature of load vs deflection curve decides whether the behaviour of spring is linear or non-linear.  Mostly closed coiled helical spring have linear nature.
+                </li>
+                <br>
+                <li>Spring index(c):
+                    <pre>
+     c=D/d
+     Where D= mean distance of coil spring
+     d = spring wire distance 
+     c = spring index
+
+                    </pre>
+                </li>
+                <li>Max shear stress(Fs):
+                    <pre>
+     Fs = 16.t/πd<sup>3</sup> kg/mm<sup>2</sup>
+                    </pre>
+                </li>
+                <li>Torque (t):--  
+        <pre>
+     t=w.r kg-mm
+     r=D/2 mm
+                    </pre>
+                </li>
+                <li>Deflection (δ) :--  
+        <pre>
+     δ=64wr3n/Gdd3
+     δ=64w.(D/2)3n/Gdd3
+     δ=64wD3n/8Gdd3
+     δ=8wD3n/Gdd3
+     δ=8.wc3n/Gd4
+     δ=8wD3n/Gd4 mm
+
+                    </pre>
+                </li>
+                <li>Modulus of Rigidity of spring (G): --   
+        <pre>
+     For Steel spring material (G) = 8297.43 kg/mm<sup>2</sup>
+
+                    </pre>
+                </li>
+            </ol>
+            <h3 class="content-section-heading">COMPRESSION SPRING:-- </h3>
+            <p class="content-section-paragraph">A <b>compression spring</b> is an open-coil helical spring that offers resistance to a   compressive force applied axially. They are usually coiled at a constant diameter, though they can be coiled in other needed forms such as conical, concave (barrel), convex (hourglass), or various combinations of these. Compression springs are used compression springs are fabricated from round wire.  Compression springs are used to keep components from meeting.</p>
+            <img src="images/compressive%20spring.png" style="margin-left:calc(50% - 80px);">
+            
+            <h3 class="content-section-heading">TENSION SPRING:-- </h3>
+            <p class="content-section-paragraph">A <b>Tension spring</b> resist the pulling force that is placed upon them and this creates a sling back effect when the force is removed, causing it to return to its original shape .This function makes them ideal for lifting heavy objects and assisting in the lifting or dispersing of certain loads. Tension springs usually have hooks on the ends to facilitate the function of being extended. Tension springs are mainly used to hold two components together.</p>
+            <img src="images/tensile%20spring.png" style="margin-left:calc(50% - 80px);">
+            
+            <h3 class="content-section-heading">SPRING TESTING MACHINE:-- </h3>
+            <ol class="content-section-ordered-list">
+                <li> It is used for determining the behaviour of spring while in compression or tension up to a max capacity if 300kg.</li><br>
+                <li>
+                   The machine consists of a base unit inside which is housed a weighting system. The machine consist steel closed head and steel base. the hydraulic jack of 10tone capacity is fixed to base.
+                </li><br>
+                <li>
+                   A dial in front of a base unit is a load indicator which indicates the load being applied to a spring under test. The deformation undergone by spring can be observed from graduated scale on which a pointer move in case spring being tested under compression, it is to be placed between compression plates,  and in case spring to be tested under tension it is located under upper tension book.
+                </li><br>
+                <li>
+                    Two vertical pillars are held by backer supported a beam whose position can be altered, if required. A pointer fixed on this beam slides over fixed scale.
+                </li><br>
+                <li>The motorized pumping unit, which is of plunger type housed in the base unit and is driven by a single phase 220v ac supply electric motor.</li><br>
+                <li>The pumping unit is a separate unit connected to the jack by means of [pressure tube] the general construction of machine is robust and leak proof.</li><br>
+                <li>The machine is fitted with a handle wheel control marked slow and fast, which enables the scale of application of load to be varied the machine is equipped with facilities for hand pumping in case of power failure.</li><br>
+                <li>The helical spring testing machine is based on the hydraulic system.</li><br>
+                <li>For helical steel spring material (G) = 8297.43kg/mm<sup>2</sup>.</li>
+
+            </ol>
+            <h3 class="content-section-heading">DIAGRAM:--</h3>
+            <img src="images/machine.PNG" style="margin-left:calc(50% - 170px);">
+            <ol class="content-section-ordered-list">
+                <li>Base unit</li>
+                <li>Hand liver</li>
+                <li>Dial (load indicator)</li>
+                <li>Compression spring</li>
+                <li>Tension spring</li>
+                <li>Upper tension hook</li>
+                <li>Lower tension hook</li>
+                <li>Compression plates</li>
+            </ol>
+
+    
+            <div style="padding-bottom:30px;"></div>
+        </div>
+    </div>
+</body>    
+</html>

@@ -1,0 +1,323 @@
+<html lang="en">
+<head>
+    <title>Virtual Labs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body
+        {
+            background-color: #012943;
+        }
+        .main-section
+        {
+            width:1050px;
+            background-color: #e4f2fd;
+            margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .inline
+        {
+            display: inline;
+        }
+        .links
+        {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .content-section
+        {
+            
+            background-color: white;
+            margin: auto;
+            /*width: calc(100% - 70px);*/
+            width: 1000px;
+            padding-right: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        ul li
+        {
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            margin-left: 10px;
+            
+        }
+        ul li:hover
+        {
+            background-color: #02568e;  
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .content-section-heading
+        {
+            margin-left: 20px;
+        }
+        .menuimg
+        {
+            height: 50px;
+            width: 50px;
+        }
+        .content-section-ordered-list
+        {
+            margin-left: 40px;
+        }
+        .content-section-paragraph
+        {
+            margin-left: 30px;
+        }
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table
+        {
+            width: 90%;
+            margin-top: 20px;
+        }
+        td
+        {
+            height: 30px;
+        }
+        pre
+        {
+            font-size:15px;
+        }
+        .button
+        {
+            background-color: black;
+            color: white;
+            width: 70px;
+            padding:5px 0px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 100PX;
+            display: none;
+        }
+        .quiz-window
+        {
+            width:90%;
+            margin-left: 5%;
+            border:2px solid black;
+            height:500px;
+        }
+        .submit
+        {
+            background-color: black;
+            color: white;
+            width: 70px;
+            padding:5px 0px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <img src="skit.png" style="width:calc(100% - 60px);padding:20px 40px 0px 40px;height:80px"/>
+        <h1 style="background-color:#0e8de0;color:white;padding-left:20px;border:1px solid white;padding:12px;">Strength-of-Materials Lab</h1>
+        <div style="background-color: #012943;color:white;padding:10px;">
+            <!--<p class="links inline">Home </p>
+            <p class="inline"> > </p>-->
+            <p class="links inline">Strength-of-Materials Lab</p>
+            <p class="inline"> > </p>
+            <p class="links inline">Universal Spring Testing Machine</p>
+        </div>
+        <h1 style="color:#3d414c;padding-left:30px;">Universal Spring Testing Machine</h1>
+        <div class="content-section">
+            <ul style="padding:0px;">
+                <a href="index.html"><li><img class="menuimg" src="theory.jpg"><br><p>THEORY</p></li></a>
+                <a href="procedure.html"><li><img class="menuimg" src="procedure.jpg"><br><p>PROCEDURE</p></li></a>
+                <a href="selfevaluation.html"><li><img class="menuimg" src="selfevaluation.jpg"><br><p>SELF-EVALUATION</p></li></a>
+                <a href="simulation.html"><li><img class="menuimg" src="simulation.jpg"><br><p>SIMULATOR</p></li></a>
+                <a href="assignment.html"><li><img class="menuimg" src="assignment.jpg"><br><p>ASSIGNMENT</p></li></a>
+                <a href="quiz.html"><li><img class="menuimg" src="quiz.jpg"><br><p>QUIZ</p></li></a>
+                <a href="video.html"><li><img class="menuimg" src="video.jpg"><br><p>VIDEO</p></li></a>
+                <a href="reference.html"><li><img class="menuimg" src="reference.jpg"><br><p>REFERENCE</p></li></a>
+            </ul>
+            <h1 style="margin-left:60px">SELF EVALUATION</h1>
+            <div class="quiz-window">
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q1. Which type of springs have only active coils?</h2>
+                        <ol type="A">
+                        <form name="quiz1" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">Helical compression springs<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Helical tension springs<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Both a. and b<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">None of the above<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q2. Solid length for helical compression springs having square and ground ends is given as_____</h2>
+                        <ol type="A">
+                        <form name="quiz2" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">(n + 2)d<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">(n + 3)d<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">(n + 4)d<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">None of the above<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q3. Which law is used in the movement of a helical spring</h2>
+                        <ol type="A">
+                        <form name="quiz3" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">Gravitational<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Pascal’s Law<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Newton’s Law<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Hooke’s Law<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q4. Which of the following is an application of helical springs</h2>
+                        <ol type="A">
+                        <form name="quiz4" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">Automatic door closers<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Mattress springs<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Car suspension<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">All of the above<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q5. Give the condition at which a spring obeys Hooke’s law</h2>
+                        <ol type="A">
+                        <form name="quiz5" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">The extension of the spring should equal to the elastic limit<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">The extension of the spring should be within the elastic limit<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">The extension of the spring should be greater than the elastic limit<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">The extension of the spring should be less than the elastic limit<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        <h1 id="finish" style="color:green;text-align:center"></h1>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        
+                    </div>
+                    
+                
+            </div>
+            <div style="padding-bottom:30px;"></div>
+        </div>
+    </div>
+    <script>
+        var slideIndex1 = 1;
+        var answers=['B','A','D','D','B'];
+        function plusDivs(n,check)
+        {
+            if(check==1)
+            {
+                showDivs(slideIndex1 += n,check);
+            }
+        }
+        showDivs(slideIndex1,1);
+        function showDivs(n,check)
+        {
+            var i;
+            if(check==1)
+            {
+                var x = document.getElementsByClassName("screen1");
+                if (n > x.length) {slideIndex1 = 1}
+                if (n < 1) {slideIndex1 = x.length}
+                for (i = 0; i < x.length; i++) 
+                {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex1-1].style.display = "block"; 
+               /* if(slideIndex1==1)
+                {
+                    var x = document.getElementsByClassName("simulation-window");
+                    x[0].style.height="650px";
+                }
+                if(slideIndex1==2)
+                {
+                    document.getElementById('task-bar').innerHTML="Task 3 : Fix spring in machine";
+                    var x = document.getElementsByClassName("simulation-window");
+                    x[0].style.height="1000px";
+                }
+                if(slideIndex1==3)
+                {
+                    document.getElementById('task-bar').innerHTML="Calculations and result:";
+                    var x = document.getElementsByClassName("simulation-window");
+                    x[0].style.height="900px";
+                    displaycalculation();
+                }*/
+            }            
+        }
+        function submitanswer()
+        {
+            var q="quiz"+slideIndex1;
+            var option = document.forms[q]["option"].value;
+            var x = document.getElementsByClassName("submit");
+            x[slideIndex1-1].style.display="none";
+            if(option==answers[slideIndex1-1])
+            {
+                x = document.getElementsByClassName("correct");
+                x[slideIndex1-1].innerHTML="Correct Answer";
+            }
+            else    
+            {
+                x = document.getElementsByClassName("incorrect");
+                x[slideIndex1-1].innerHTML="Wrong Answer";
+                x = document.getElementsByClassName("correct");
+                x[slideIndex1-1].innerHTML="Correct option is "+answers[slideIndex1-1];
+            }
+            if(slideIndex1!=5)
+            {
+                displaytest1button();
+                
+            }
+            if(slideIndex1==5)
+                document.getElementById('finish').innerHTML="FINISH";
+            return false;
+        }
+        function displaytest1button()
+        {
+            var x = document.getElementsByClassName("button");
+            x[2*slideIndex1-2].style.display="block";
+            x[2*slideIndex1-1].style.display="block";
+        }
+    </script>
+</body>    
+</html>

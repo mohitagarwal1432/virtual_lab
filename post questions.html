@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+    <title>Virtual Labs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body
+        {
+            background-color: #012943;
+        }
+        .main-section
+        {
+            width:1050px;
+            background-color: #e4f2fd;
+            margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .inline
+        {
+            display: inline;
+        }
+        .links
+        {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .content-section
+        {
+            
+            background-color: white;
+            margin: auto;
+            /*width: calc(100% - 70px);*/
+            width: 1000px;
+            padding-right: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        ul li
+        {
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            margin-left: 10px;
+            
+        }
+        ul li:hover
+        {
+            background-color: #02568e;  
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .content-section-heading
+        {
+            margin-left: 20px;
+        }
+        .menuimg
+        {
+            height: 50px;
+            width: 50px;
+        }
+        .content-section-ordered-list
+        {
+            margin-left: 40px;
+        }
+        .content-section-paragraph
+        {
+            margin-left: 30px;
+        }
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table
+        {
+            width: 90%;
+            margin-top: 20px;
+        }
+        td
+        {
+            height: 30px;
+        }
+        pre
+        {
+            font-size:15px;
+        }
+        .button
+        {
+            background-color: black;
+            color: white;
+            width: 70px;
+            padding:5px 0px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 100PX;
+            
+        }
+        .quiz-window
+        {
+            width:90%;
+            margin-left: 5%;
+            border:2px solid black;
+            height:460px;
+        }
+        .submit
+        {
+            background-color: black;
+            color: white;
+            width: 70px;
+            padding:5px 0px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <img src="skit.png" style="width:calc(100% - 60px);padding:20px 40px 0px 40px;height:80px"/>
+        <h1 style="background-color:#0e8de0;color:white;padding-left:20px;border:1px solid white;padding:12px;">Strength-of-Materials Lab</h1>
+        <div style="background-color: #012943;color:white;padding:10px;">
+            <!--<p class="links inline">Home </p>
+            <p class="inline"> > </p>-->
+            <p class="links inline">Strength-of-Materials Lab</p>
+            <p class="inline"> > </p>
+            <p class="links inline">Universal Spring Testing Machine</p>
+        </div>
+        <h1 style="color:#3d414c;padding-left:30px;">Universal Spring Testing Machine</h1>
+        <div class="content-section">
+            <ul style="padding:0px;">
+                <a href="index.html"><li><img class="menuimg" src="theory.jpg"><br><p>THEORY</p></li></a>
+                <a href="procedure.html"><li><img class="menuimg" src="procedure.jpg"><br><p>PROCEDURE</p></li></a>
+                <a href="selfevaluation.html"><li><img class="menuimg" src="selfevaluation.jpg"><br><p>SELF-EVALUATION</p></li></a>
+                <a href="simulation.html"><li><img class="menuimg" src="simulation.jpg"><br><p>SIMULATOR</p></li></a>
+                <a href="assignment.html"><li><img class="menuimg" src="assignment.jpg"><br><p>ASSIGNMENT</p></li></a>
+                <a href="quiz.html"><li><img class="menuimg" src="quiz.jpg"><br><p>QUIZ</p></li></a>
+                <a href="video.html"><li><img class="menuimg" src="video.jpg"><br><p>VIDEO</p></li></a>
+                <a href="reference.html"><li><img class="menuimg" src="reference.jpg"><br><p>REFERENCE</p></li></a>
+            </ul>
+            <h1 style="margin-left:60px">QUIZ</h1>
+            <div class="quiz-window">
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q1. If spring index=2.5, what can be concluded about stresses in the wire?</h2>
+                        <ol type="A">
+                        <form name="quiz1" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">They are high springs<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">They are negligible<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">They are moderate<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">Cannot be determined<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">Q2.Find the shear stress in the spring wire used to design a helical compression spring if a load of 1200N is applied on the spring. Spring index is 6, and wire diameter 7mm.</h2>
+                        <ol type="A">
+                        <form name="quiz2" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">452.2N/mm²<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">468.6N/mm²<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">512.2N/mm²<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">None of the above<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">3.Find the mean coil diameter of a helical compression spring if a load of 1200N is applied on the spring. Spring index is 6, and wire diameter 7mm.</h2>
+                        <ol type="A">
+                        <form name="quiz3" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">7/6mm<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">42mm<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">1200×6/7 mm<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">None of the listed<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">4.	Find the extension produced by a helical spring of spring constant 30N/m, when a mass of 500g is attached to its end?</h2>
+                        <ol type="A">
+                        <form name="quiz4" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">0.016 m<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">1.6 m<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">0.16 m<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">None of these<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        <p onclick="plusDivs(1,1)" class="button" style="float:right;">Next</p>
+                    </div>
+                    
+                    <div class="screen1">
+                        <h2 style="margin-left:30px;margin-top:60px">5.	 Determine number of coils in a helical compression spring, if modulus of rigidity is 80 Gpa and spring stiffness is 50 N/ mm. Assume wire diameter and spring index as 8 mm and 5 respectively</h2>
+                        <ol type="A">
+                        <form name="quiz5" onsubmit="return submitanswer()">
+                            <li style="font-size:20px;margin-left:60px">11.8 turns<input type="radio" value="A" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">12.8 turns<input type="radio" value="B" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">13.3 turns<input type="radio" value="C" name="option"></li>
+                            <li style="font-size:20px;margin-left:60px">None of the above<input type="radio" value="D" name="option"></li>
+                            <br>
+                            <input type="submit" value="Check" class="submit">
+                        </form>
+                        <h4 class="incorrect" style="color:red;margin-left:40px;"></h4>
+                        <h4 class="correct" style="color:green;margin-left:40px;"></h4>
+                        </ol>
+                        <p onclick="plusDivs(-1,1)" class="button" style="float:left;">Back</p>
+                        
+                    </div>
+                    
+                
+            </div>
+            <div style="padding-bottom:30px;"></div>
+        </div>
+    </div>
+    <script>
+        var slideIndex1 = 1;
+        var answers=['A','B','B','C','B'];
+        function plusDivs(n,check)
+        {
+            if(check==1)
+            {
+                showDivs(slideIndex1 += n,check);
+            }
+        }
+        showDivs(slideIndex1,1);
+        function showDivs(n,check)
+        {
+            var i;
+            if(check==1)
+            {
+                var x = document.getElementsByClassName("screen1");
+                if (n > x.length) {slideIndex1 = 1}
+                if (n < 1) {slideIndex1 = x.length}
+                for (i = 0; i < x.length; i++) 
+                {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex1-1].style.display = "block"; 
+               /* if(slideIndex1==1)
+                {
+                    var x = document.getElementsByClassName("simulation-window");
+                    x[0].style.height="650px";
+                }
+                if(slideIndex1==2)
+                {
+                    document.getElementById('task-bar').innerHTML="Task 3 : Fix spring in machine";
+                    var x = document.getElementsByClassName("simulation-window");
+                    x[0].style.height="1000px";
+                }
+                if(slideIndex1==3)
+                {
+                    document.getElementById('task-bar').innerHTML="Calculations and result:";
+                    var x = document.getElementsByClassName("simulation-window");
+                    x[0].style.height="900px";
+                    displaycalculation();
+                }*/
+            }            
+        }
+        function submitanswer()
+        {
+            var q="quiz"+slideIndex1;
+            var option = document.forms[q]["option"].value;
+            var x = document.getElementsByClassName("submit");
+            x[slideIndex1-1].style.display="none";
+            if(option==answers[slideIndex1-1])
+            {
+                x = document.getElementsByClassName("correct");
+                x[slideIndex1-1].innerHTML="Correct Answer";
+            }
+            else    
+            {
+                x = document.getElementsByClassName("incorrect");
+                x[slideIndex1-1].innerHTML="Wrong Answer";
+                x = document.getElementsByClassName("correct");
+                x[slideIndex1-1].innerHTML="Correct option is "+answers[slideIndex1-1];
+            }
+            return false;
+        }
+        function displaytest1button()
+        {
+            var x = document.getElementsByClassName("button");
+            x[2*slideIndex1-2].style.display="block";
+            x[2*slideIndex1-1].style.display="block";
+        }
+    </script>
+</body>    
+</html>
